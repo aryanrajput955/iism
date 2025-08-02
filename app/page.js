@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
-
+import Link from "next/link"
 export default function IISMLandingPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -90,7 +90,7 @@ export default function IISMLandingPage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-full z-50 p-2 transition-all duration-300 ${
           isScrolled ? "bg-white/95 backdrop-blur-sm shadow-lg" : "bg-gray-200"
         }`}
       >
@@ -103,7 +103,7 @@ export default function IISMLandingPage() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-green-800">IISM</h1>
-                <p className="text-xs text-gray-600">Sustainable Management</p>
+                <p className="text-xs text-gray-600">Integrated Institute<br/> of Sustainable Management</p>
               </div>
             </div>
 
@@ -563,11 +563,11 @@ export default function IISMLandingPage() {
               <div className="space-y-3 text-center">
                 <div className="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
                   <p className="font-semibold text-blue-700">Main Office</p>
-                  <p className="text-gray-600">+91 XXXXX XXXXX</p>
+                  <p className="text-gray-600">+91 7005748375</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
                   <p className="font-semibold text-blue-700">Support</p>
-                  <p className="text-gray-600">+91 XXXXX XXXXX</p>
+                  <p className="text-gray-600">+91 9774792923</p>
                 </div>
               </div>
               <div className="mt-6 text-center">
@@ -589,17 +589,22 @@ export default function IISMLandingPage() {
               <div className="space-y-3 text-center">
                 <div className="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
                   <p className="font-semibold text-green-700">General Inquiries</p>
-                  <p className="text-gray-600">info@iism.org</p>
+                  <p className="text-gray-600">info@iismonline.in</p>
                 </div>
+                <Link href="http://iismonline.in">
                 <div className="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
                   <p className="font-semibold text-green-700">Partnerships</p>
-                  <p className="text-gray-600">contact@iism.org</p>
+                  <p className="text-gray-600">iismonline.in</p>
                 </div>
+                </Link>
               </div>
+              
               <div className="mt-6 text-center">
+                <Link href="http://iismonline.in">
                 <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors duration-300 font-medium">
                   Send Email
                 </button>
+                </Link>
               </div>
             </div>
 
@@ -774,11 +779,11 @@ export default function IISMLandingPage() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="relative">
-                  <Image src="/logo.png" alt="IISM Logo" width={40} height={40} className="rounded-full" />
+                  <Image src="/logo.png" alt="IISM Logo" width={60} height={60} className="" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">IISM</h3>
-                  <p className="text-sm text-gray-400">Sustainable Management</p>
+                  <p className="text-sm text-gray-400"> Integrated Institute of Sustainable Management</p>
                 </div>
               </div>
               <p className="text-gray-400 text-sm">
@@ -826,14 +831,14 @@ export default function IISMLandingPage() {
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>info@iism.org</li>
-                <li>+91 XXXXX XXXXX</li>
+                <li>+91 7005748375, 9774792923</li>
                 <li>Manipur, India</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 IISM - Integrated Institute of Sustainable Management. All rights reserved.</p>
+            <p>&copy; 2025 IISM - Integrated Institute of Sustainable Management. All rights reserved.</p>
           </div>
         </div>
       </footer>
